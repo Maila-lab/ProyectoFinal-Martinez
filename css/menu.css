@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+.container{/*fondo*/
+    width: 100%;
+    background-color: rgba(182, 8, 8, 0.062);
+}
+
+.container nav {
+    width: 100%;/*ancho, q ocupe toda la pantalla*/
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;/*margen*/
+    background-color: #5a7cec;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);/*color del texto dentro de la nav*/
+}
+
+.nav-card {
+    display: none;
+}
+
+.container nav button {
+    display: none;
+}
+
+.nav-card li {
+    list-style: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.container nav i:hover >.buy-card {/*crea un contenedor*/
+    width: 600px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    background-color: #5a7cec;
+}
+/*parte de arriba del carrito*/
+.container nav i:hover .nav-card {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10 px;
+}
+
+.container nav i:hover .buy-card > button{
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    margin: 30px auto;
+    background-color: transparent;
+    border: solid thin #ffffff;
+    color: #000000;
+   font-size: 2rem;
+    cursor: pointer;
+}
+
+.container nav i:hover .buy-card > button:hover{
+    border: solid thin #494848;
+    transition: all .4s;
+}
+
+.container nav img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+
+h1 {/*TITULO*/
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 10rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000dc2f6;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 5rem;
+}
+
+.grid {
+    display: grid;
+    max-width: 1100px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,300px));/*se acomoda al ancho de la pantalla*/
+    padding-bottom: 50px;
+    padding: 5rem;
+}
+
+/*VISTA DE LOS PRODUCTOS*/
+.grid img {
+    width: 300px;
+    height: 400px;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2da0c3;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color:rgba(0, 0, 0, 0.904);
+}
+
+.grid a {
+    font-size: 2rem;
+    font-weight: bolder;   
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.grid p {
+    font-size: 2rem;
+    font-weight: bolder;   
+    text-align: end;
+    margin-bottom: 15px;
+}
+
+.infor ,button {
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(141, 3, 3, 0.897);
+    border: none;
+    outline: none;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.infor ,button:hover {
+    background-color: #2da0c3;
+    transition: all .3s;
+}
+
+/*Acomodar los elementos de nuestro carrito de compras*/
+.lista_de_productos div{
+    display: none;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border: solid thin #000000;
+}
+
+
+.container nav i:hover .buy-card > .lista_de_productos div{
+    display: flex;
+}
+
+.lista_de_productos img {
+    width: 100px;
+}
+
+.lista_de_productos p {
+    width: 300px;
+    font-size: 2rem;
+    text-align: end;
+}
+
+.lista_de_productos i {
+    width: 600px;
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+h4{ /*oculta el id*/
+   color: rgba(255, 255, 255, 0);
+}

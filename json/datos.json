@@ -1,0 +1,128 @@
+[
+    {
+        "id": "1",
+        "img": "/img/lio-messi.jpeg",
+        "titulo": "Lionel Andres Messi",
+        "descripcion": "Argentina -- altura 1.70m -- peso 72kg",
+        "precio": "30,00"
+    },
+    {
+        "id": "2",
+        "img": "/img/dibu-martinez.jpeg",
+        "titulo": "Emiliano Martinez",
+        "descripcion": "Argentina -- altura 1.95m -- peso 88kg",
+        "precio": "28,00"
+    },
+    {
+        "id": "3",
+        "img": "/img/di-maria.jpeg",
+        "titulo": "Angel Di Maria",
+        "descripcion": "Argentina -- altura 1.78m -- peso 75kg",
+        "precio": "30,00"
+    },
+    {
+        "id": "4",
+        "img": "/img/Memo-Ochoa.png",
+        "titulo": "Guillermo Ochoa",
+        "descripcion": "Mexico -- altura 1.90m -- peso 85kg",
+        "precio": "23,00"
+    },
+    {
+        "id": "5",
+        "img": "/img/Cristiano-Ronaldo.png",
+        "titulo": "Cristiano Ronaldo",
+        "descripcion": "Portugal -- altura 1.87m -- peso 83kg",
+        "precio": "15,00"
+    },
+    {
+        "id": "6",
+        "img": "/img/cuti-romero.jpeg",
+        "titulo": "Cristian Romero",
+        "descripcion": "Argentina -- altura 1.85m -- peso 80kg",
+        "precio": "60,00"
+    },
+    {
+        "id": "7",
+        "img": "/img/Lewandowski.png",
+        "titulo": "Robert Lewandowski",
+        "descripcion": "Polonia -- altura 1.85m -- peso 81kg",
+        "precio": "40,00"
+    },
+    {
+        "id": "8",
+        "img": "/img/Bruno-Fernandes.png",
+        "titulo": "Bruno Fernandes",
+        "descripcion": "Portugal -- altura 1.80m -- peso 69kg",
+        "precio": "70,00"
+    },
+    {
+        "id": "9",
+        "img": "/img/Darwin-Núñez.png",
+        "titulo": "Darwin Núñez",
+        "descripcion": "Uruaguay -- altura 1.87m -- peso 81kg",
+        "precio": "70,00"
+    },
+    {
+        "id": "10",
+        "img": "/img/de-paul.jpeg",
+        "titulo": "Rodrigo De Paul",
+        "descripcion": "Argentina -- altura 1.78m -- peso 68kg",
+        "precio": "25,00"
+    },
+    {
+        "id": "11",
+        "img": "/img/Erling-Håland.png",
+        "titulo": "Erling Håland",
+        "descripcion": "Noruega -- altura 1.94m -- peso 88kg",
+        "precio": "180,00"
+    },
+    {
+        "id": "12",
+        "img": "/img/Harry-Kane.png",
+        "titulo": "Harry Kane",
+        "descripcion": "Inglaterra -- altura 1.88m -- peso 88kg",
+        "precio": "110,00"
+    },
+    {
+        "id": "13",
+        "img": "/img/julian-alvarez.jpeg",
+        "titulo": "Julian Alvarez",
+        "descripcion": "Argentina -- altura 1.70m -- peso 71kg",
+        "precio": "90,00"
+    },
+    {
+        "id": "14",
+        "img": "/img/Kylian-Mbappé.png",
+        "titulo": "Kylian Mbappé",
+        "descripcion": "Francia -- altura 1.78m -- peso 73kg",
+        "precio": "180,00"
+    },
+    {
+        "id": "15",
+        "img": "/img/lautaro-martinez.jpeg",
+        "titulo": "Lautaro Martinez",
+        "descripcion": "Argentina -- altura 1.77m -- peso 72kg",
+        "precio": "110,00"
+    },
+    {
+        "id": "16",
+        "img": "/img/Luka-Modrić.png",
+        "titulo": "Luka Modrić",
+        "descripcion": "Croacia -- altura 1.72m -- peso 66kg",
+        "precio": "40,00"
+    },
+    {
+        "id": "17",
+        "img": "/img/Neymar.png",
+        "titulo": "Neymar da Silva Junior",
+        "descripcion": "Brasil -- altura 1.75m -- peso 68kg",
+        "precio": "20,00"
+    },
+    {
+        "id": "18",
+        "img": "/img/Olivier-Giroud.png",
+        "titulo": "Olivier Giroud",
+        "descripcion": "Fracia -- altura 1.93m -- peso 91kg",
+        "precio": "25,00"
+    }
+]
