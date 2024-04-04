@@ -112,13 +112,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 // busca la informacion en el documento json
 const fetchData = async ()=>{
     pedirProductos();
-    try {
-        const res = await fetch('../json/datos.json');
-        const data = await res.json()   
-        pintarCards(data)
-    } catch (error) {
-        console.log(error);
-    }
+    
 }
 
 //INSTANCIO DE PROMESA
