@@ -5,7 +5,6 @@ const carrito =document.getElementById("carrito"),
     btnComprarProductos = document.querySelector('#comprar_productos');
 
 const listaProductos =document.getElementById("productos");
-//const card =document.getElementById('card')
 
 // DECLARACION E INICIALIZACION DE VARIABLES USUARIOS
 let articulosCarrito =[];
@@ -29,7 +28,6 @@ function registrarEventsListeners() {
 function agregarProducto(e) {
     if(e.target.classList.contains("agregar-carrito")){
         const productoSeleccionado = e.target.parentElement.parentElement
-       // console.log(productoSeleccionado);
         leerInfo(productoSeleccionado)
     }
     //AGREGA AL LOCALSTORE
@@ -37,7 +35,6 @@ function agregarProducto(e) {
 }
 //RECUPERA INFO DE NUESTRO HTML AL QUE LE DIMOS CLICK 
 function leerInfo(producto) {
-    
      //CREA UN OBJETO CON EL CONTENIDO DEL PRODUCTO
     const infoProducto={
         imagen: producto.querySelector('div img').src,
@@ -123,6 +120,23 @@ const fetchData = async ()=>{
         console.log(error);
     }
 }
+
+//INSTANCIO DE PROMESA
+const pedirProductos = () => {
+    productos.innerHTML = `<h2>Cargando....</h2>`;
+    return new Promise((resolve, reject) =>{
+        setTimeout(() => {
+            try {
+                const res = await fetch('../json/datos.json');
+                const data = await res.json()   
+                pintarCards(data)
+            } catch () {
+                 reject("error de datos");
+            }
+        },2500);
+    })
+};
+
 // recorre todos los datos del json para poder pintar en cada tarjeta
 const pintarCards =data =>{
     console.log(data);
@@ -153,17 +167,3 @@ function pintarHTML(producto) {
         listaProductos.appendChild(fila)
 }
 
-
-//INSTANCIO DE PROMESA
-const pedirProductos = () => {
-    productos.innerHTML = `<h2>Cargando....</h2>`;
-    return new Promise((resolve, reject) =>{
-        setTimeout(() => {
-            if(arr){
-                resolve(arr);
-            }else{
-                reject("error de datos");
-            }
-        },2500);
-    })
-};
