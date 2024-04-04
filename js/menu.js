@@ -141,7 +141,6 @@ function pintarHTML(producto) {
         imagen.innerHTML=`
         <img src="${producto.img}"></img>
         `;
-
         infor.innerHTML=`
         <h4>${producto.id}</h4>
         <h3>${producto.titulo}</h3>
@@ -165,6 +164,6 @@ const pedirProductos = () => {
             }else{
                 reject("error de datos");
             }
-        },5000);
+        },2500);
     })
 };
