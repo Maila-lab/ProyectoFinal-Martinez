@@ -115,12 +115,12 @@ const fetchData = async ()=>{
                 const res = await fetch('../json/datos.json');
                 const data = await res.json()   
                 pintarCards(data)
-            } catch () {
-                 reject("error de datos");
+            } catch (error) {
+                 console.log(error);
             }
 }
 
-//INSTANCIO DE PROMESA
+/*//INSTANCIO DE PROMESA
 const pedirProductos = () => {
     productos.innerHTML = `<h2>Cargando....</h2>`;
     return new Promise((resolve, reject) =>{
@@ -134,7 +134,7 @@ const pedirProductos = () => {
             }
         },2500);
     })
-};
+};*/
 
 // recorre todos los datos del json para poder pintar en cada tarjeta
 const pintarCards =data =>{
