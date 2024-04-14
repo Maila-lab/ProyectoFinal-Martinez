@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 // busca la informacion en el documento json
 const fetchData = async ()=>{
     try {
-                const res = await fetch('../json/datos.json');
+                const res = await fetch('.../json/datos.json');
                 const data = await res.json()   
                 pintarCards(data)
             } catch (error) {
